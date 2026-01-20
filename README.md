@@ -4,7 +4,7 @@ A simple project that demonstrates how to create a minimal ELF executable for x8
 
 ## Overview
 
-This project contains a Python script that generates a complete ELF binary from scratch without using any assembler or compiler. The generated binary:
+This project contains a Bash script that generates a complete ELF binary from scratch without using any assembler or compiler. The generated binary:
 
 - Is a valid 64-bit ELF executable
 - Contains hand-crafted x86-64 shellcode
@@ -13,10 +13,10 @@ This project contains a Python script that generates a complete ELF binary from 
 
 ## Usage
 
-Run the Python script to compile the Hello World program:
+Run the Bash script to compile the Hello World program from `elf_bytes.txt`:
 
 ```bash
-python compile_hello_world.py
+bash compile_hello_world.sh
 ```
 
 This will create an executable file named `helloworld`. You can run it with:
@@ -39,5 +39,5 @@ The script creates a minimal ELF binary with:
 
 ## Requirements
 
-- Python 3.x
+- Bash
 - Linux environment (to run the generated binary)
